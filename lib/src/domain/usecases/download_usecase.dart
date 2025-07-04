@@ -1,9 +1,11 @@
 
+import 'package:bloc_state_management/src/data/repositories/download_repository_impl.dart';
 
-
-import 'package:bloc_state_management/src/resources/download_repository.dart';
+import '../repository/download_respository.dart';
 
 class DownloadUsecase {
-  final downloadProvider = DownloadRepository();
-  Future<String> fetchDownloadImg() =>  downloadProvider.fetchDownloadImg();
+  DownloadRepositoryImpl downloadRepository = DownloadRepositoryImpl();
+  Future<String> fetchDownloadImg() {
+    return downloadRepository.getDownloadImage();
+  }
 }

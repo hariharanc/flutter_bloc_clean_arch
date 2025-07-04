@@ -2,7 +2,7 @@
 
 import 'package:bloc_state_management/src/domain/repository/download_respository.dart';
 
-import '../../resources/download_provider.dart';
+import '../data_sources/local/download_provider.dart';
 
 class DownloadRepositoryImpl extends DownloadRepository{
 
